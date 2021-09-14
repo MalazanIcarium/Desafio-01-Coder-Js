@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderHouse - Javascript</title>
+</head>
+<body>
+    <h1>Desafio nº1</h1>
+
+    <script>
+        let name = prompt('Ingrese su nombre, por favor.')
+        let lastName = prompt('Ingrese su apellido, por favor.')
+        let birth = parseInt(prompt('Por ultimo, ingrese su año de nacimiento.'))
+
+        let welcome = ('Bienvenido' + ' ' + name + ' ' + lastName + '! ')
+        let today = new Date();
+        let yyyy = today.getFullYear();
+        let age = yyyy - birth;
+        
+        if (age >= 18) {
+            alert(welcome + 'Usted esta apto para recibir el credito.')
+        }
+        else {
+            alert('Usted debe tener por lo menos 18 años para solicitar el credito.')
+        
+    }
+
+        
+
+
+    </script>
+</body>
+</html>
